@@ -4,17 +4,9 @@
 This is my programming portfolio for the Computer Programming course at Leeds Beckett University. It shows how I progressed and achieved throughout the term. I have done different programming activities and assignments, showing that I can understand and apply procedural programming ideas and write working computer programs using Python 3. In this portfolio, you will see how I learned and improved, as shown in the weekly tasks, three programming tasks (Task1, Task2, Task3). The README.md file explains how I think, solve problems, and make decisions when I create various programming solutions.
 
 ### Repository Structure
-- **Portfolio**: Contains weekly task folders for each week.
-  - **Week 1**: Includes Exercises01.pdf and solutions for 4 programming problems from Week 1.
-  - **Week 2**: Contains Exercises02.pdf, Practical02.pdf, and solutions for 4 programming problems from Week 2.
-  - **Week 3**: Consists of Exercises03.pdf, Practical03.pdf, and solutions for 8 programming problems from Week 3.
-  - **Week 4**: Consists of Exercises04.pdf, Practical04.pdf, and solutions for 8 programming problems from Week 4.
-  - **Week 5**: Holds Exercises05.pdf, Practical05.pdf, solutions for 6 programming problems, and 2 demofile.txt files from Week 5.
-  - **Week 6**: Consists of Exercises06.pdf, Practical06.pdf, and solutions for 6 programming problems from Week 6.
-  - **Week 7**: Contains Exercises07.pdf and solutions for 4 programming problems from Week 7.
-  - **Week 8**: Holds Exercises08.pdf, Practical08.pdf, solutions for 5 programming problems, 6 demofile.txt files, and a dictionary - words_alpha.txt from Week 8.
-
-- **Task 1**: Includes a Python script named BPP_pizza_calculator.py.
+- **Portfolio**: Contains task folders for each week.
+ 
+- **Task 1**: Includes a Python script named bpp_pizza_calculator.py.
   - The script calculates pizza orders with discounts based on user inputs regarding delivery, day of the week, and app usage.
  
 - **Task 2**: Contains a Python script named cat_shelter.py along with 3 additional shelter.log files.
@@ -45,7 +37,7 @@ This is my programming portfolio for the Computer Programming course at Leeds Be
 **Example Usage**:
 
 ```text
-PS D:\Second Year\First Sem\FOCP\Task 1> python BPP_pizza_calculator.py
+PS C:\Users\hp\OneDrive\Desktop\Task 2> python BPP_pizza_calculator.py
 
 ===================================== BPP Pizza Price Calculator
 How many pizzas ordered? 4
@@ -69,47 +61,16 @@ Do you want to add more orders (Y/N)? n
 **Example Usage with Exception Handling**:
 
 ```text
-PS D:\Second Year\First Sem\FOCP\Task 1> python BPP_pizza_calculator.py
+PS C:\Users\hp> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 1/bpp_pizza_calculator.py"
+BPP Pizza Price Calculator
+==========================
 
-=====================================
-     BPP Pizza Price Calculator
-=====================================
+How many pizzas ordered? 9
+Is delivery required? (Y/N) Y
+Is it Tuesday? (Y/N) N
+Did the customer use the app? (Y/N) N
 
-How many pizzas ordered? ten
-Please enter a number!
-How many pizzas ordered? -10
-Please enter a positive integer greater than 0!
-How many pizzas ordered? 10
-Is delivery required (Y/N)? dunno
-Please answer 'Y' or 'N'.
-Is delivery required (Y/N)? n
-Is it Tuesday (Y/N)? it's sunday
-Please answer 'Y' or 'N'.
-Is it Tuesday (Y/N)? n
-Did the customer use the app (Y/N)? maybe
-Please answer 'Y' or 'N'.
-Did the customer use the app (Y/N)? n
-
-=====================================
-          Price Breakdown
-=====================================
-
-Total Pizzas:                 10
-Cost per Pizza:               £12.00
-Total Price w/o Discounts:    £120
-
--------------------------------------
-Total Price:                  £120.00
--------------------------------------
-
-Do you want to add more orders (Y/N)? y
--------------------------------------
-
-=====================================
-     BPP Pizza Price Calculator
-=====================================
-
-How many pizzas ordered? |
+Total Price: £54.00
 ```
 #### Task 2: Cat Shelter Analyzer (cat_shelter.py)
 **Description**:
@@ -124,24 +85,23 @@ How many pizzas ordered? |
 **Example Usage**:
 
 ```text
-PS D:\Second Year\First Sem\FOCP\Task 2> python cat_shelter.py shelter_2023-08-26.log
+PS C:\Users\hp\OneDrive\Desktop\Task 2> python cat_shelter.py shelter_2023-08-25.log
 
-Log File Analysis
+Log File Analysis 
 ==================
+Cat Visits: 12
+Other Cats: 58
+Total Time in House: 4 Hours, 5 Minutes  
 
-Cat Visits: 11
-Other Cats: 45
+Average Visit Length: 0 Hours, 20 Minutes
+Longest Visit:        0 Hours, 45 Minutes
+Shortest Visit:       0 Hours, 5 Minutes
 
-Total Time in House: 5 Hours, 0 Minutes
-
-Average Visit Length: 27 Minutes
-Longest Visit:        45 Minutes
-Shortest Visit:       10 Minutes
 ```
 **Example Usage with Exception Handling**:
 
 ```text
-PS D:\Second Year\First Sem\FOCP\Task 2> python cat_shelter.py shelter_2023-08-26.log
+PS C:\Users\hp\OneDrive\Desktop\Task 2> python cat_shelter.py shelter_2023-08-25.log
 
 OURS,837.5,867.9
 Skipped! Non-integer entry or exit time.
@@ -157,22 +117,20 @@ Skipped! Unrecognized cat type
 
 Log File Analysis
 ==================
-
 Cat Visits: 11
 Other Cats: 45
-
 Total Time in House: 5 Hours, 0 Minutes
 
-Average Visit Length: 27 Minutes
-Longest Visit:        45 Minutes
-Shortest Visit:       10 Minutes
+Average Visit Length: 0 Hours, 27 Minutes
+Longest Visit:        0 Hours, 45 Minutes
+Shortest Visit:       0 Hours, 10 Minutes
 ```
 ```text
-PS D:\Second Year\First Sem\FOCP\Task 2> python cat_shelter.py
+PS C:\Users\hp\OneDrive\Desktop\Task 2> python cat_shelter.py 
 Missing command line argument!
-PS D:\Second Year\First Sem\FOCP\Task 2> python cat_shelter.py shelter_2023-08-26
+PS C:\Users\hp\OneDrive\Desktop\Task 2> python cat_shelter.py shelter_2023-08-26
 Cannot open "shelter_2023-08-26"!
-PS D:\Second Year\First Sem\FOCP\Task 2> python cat_shelter.py shelter_2023-08-26.log
+PS C:\Users\hp\OneDrive\Desktop\Task 2> python cat_shelter.py shelter_2023-08-26.log
 Our cats visits are not recorded in the file.
 ```
 #### Task 3: User Management System
@@ -219,7 +177,7 @@ Our cats visits are not recorded in the file.
   **Example Usage**:
  
   ```text
-  PS D:\Second Year\First Sem\FOCP\Task 3> python main.py
+  PS C:\Users\hp\OneDrive\Desktop\Task 3> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 3/user_management_system.py"
   Welcome to the User Management System!
   -------------------------------------
 
@@ -231,17 +189,17 @@ Our cats visits are not recorded in the file.
   4. Delete User
  
   Enter a command: add user
-  Enter new username: himal
-  Enter real name: Himal Acharya
-  Enter password: himalacharya
+  Enter new username: Pawan
+  Enter real name: Pawan Adhikari
+  Enter password: pppppppppp
   User Created.
-  PS D:\Second Year\First Sem\FOCP\Task 3> cat passwd.txt
+
   keith:Keith Norton:svavfureavzoyljnfuqnl
-  himal:Himal Acharya:uvznynpuneln
+
   ```
  
   ```text
-  PS D:\Second Year\First Sem\FOCP\Task 3> python main.py
+  PS C:\Users\hp\OneDrive\Desktop\Task 3> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 3/user_management_system.py"
   Welcome to the User Management System!
   -------------------------------------
  
@@ -253,88 +211,66 @@ Our cats visits are not recorded in the file.
   4. Delete User
  
   Enter a command: login
-  Enter username: himal
+  Enter username: Pawan
   Enter password:
   Login successful!
   ```
+  
   ```text
-  PS D:\Second Year\First Sem\FOCP\Task 3> python main.py
+  PS C:\Users\hp\OneDrive\Desktop\Task 3> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 3/user_management_system.py"
   Welcome to the User Management System!
   -------------------------------------
  
   Commands:
  
-  1. Add User
-  2. Login
-  3. Change Password
-  4. Delete User
+
+```
+Enter command (adduser, deluser, passwd, login): passwd
  
-  Enter a command: change password
-  Enter username: himal
+  Enter username: Pawan
   Enter current password:
-  Enter new password:
+  Enter new password: 
   Confirm new password:
   Password changed.
-  PS D:\Second Year\First Sem\FOCP\Task 3> cat passwd.txt
+  PS C:\Users\hp\OneDrive\Desktop\Task 3> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 3/user_management_system.py"
   keith:Keith Norton:svavfureavzoyljnfuqnl
-  himal:Himal Acharya:uryybjbeyq
-  ```
+  ````
   ```text
-  PS D:\Second Year\First Sem\FOCP\Task 3> python main.py
+  PS C:\Users\hp\OneDrive\Desktop\Task 3> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 3/user_management_system.py"
   Welcome to the User Management System!
   -------------------------------------
- 
-  Commands:
- 
-  1. Add User
-  2. Login
-  3. Change Password
-  4. Delete User
- 
-  Enter a command: delete user
-  Enter username to delete: himal
-  User 'himal' deleted successfully!
-  PS D:\Second Year\First Sem\FOCP\Task 3> cat passwd.txt
+ Enter command (adduser, deluser, passwd, login): deluser
+
+  Enter username to delete: Pawan
+  User 'Pawan' deleted successfully!
+  PS C:\Users\hp\OneDrive\Desktop\Task 3> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 3/user_management_system.py"
   keith:Keith Norton:svavfureavzoyljnfuqnl
   ```
   **Example Usage with Exception Handling**:
  
    ```text
-  PS D:\Second Year\First Sem\FOCP\Task 3> python main.py
+  PS C:\Users\hp\OneDrive\Desktop\Task 3> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 3/user_management_system.py"
   Welcome to the User Management System!
   -------------------------------------
  
-  Commands:
+ Enter command (adduser, deluser, passwd, login):
  
-  1. Add User
-  2. Login
-  3. Change Password
-  4. Delete User
- 
-  Enter a command: add user
-  Enter new username: Himal
-  Invalid username. Must be in lowercase letters and valid string.
-  Enter new username: @himal
-  Enter real name: Himal Acharya
-  Enter password: hello
-  Password must be at least 8 characters long.
-  Enter password: himalacharya123
+  Enter a command: adduser
+  Enter new username: Pawan
+  Enter real name: Pawan Adhikari
+  Enter password:
   User Created.
-  PS D:\Second Year\First Sem\FOCP\Task 3> cat passwd.txt
-  keith:Keith Norton:svavfureavzoyljnfuqnl
-  @himal:Himal Acharya:uvznynpuneln123
-  PS D:\Second Year\First Sem\FOCP\Task 3> python main.py
+
+  PS C:\Users\hp\OneDrive\Desktop\Task 3> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 3/user_management_system.py"
+  Welcome to the User Management System!
+  -------------------------------------
   Commands:
    
-  1. Add User
-  2. Login
-  3. Change Password
-  4. Delete User
- 
+ Enter command (adduser, deluser, passwd, login):
   Enter a command: add user
-  Enter new username: @himal
-  Enter real name: Himal Acharya
-  Enter password: himalacharya
+  Enter new username: Pawan 
+  Enter real name: Pawan Adhikari
+  Enter password: pppppppppp
   Cannot add. Most likely username already exists.
   ```
   ```text
@@ -346,71 +282,38 @@ Our cats visits are not recorded in the file.
   4. Delete User
  
   Enter a command: login
-  Enter username: himal
+  Enter username: pawan
   Enter password:
-  Login failed. Invalid username or password.
+  Access Denied
   Enter username:
   ```
   ```text
-  Commands:
 
-  1. Add User
-  2. Login
-  3. Change Password
-  4. Delete User
- 
-  Enter a command: change password
-  Enter username: himal
-  Username not found. Please enter a valid username.
-  Enter username: @himal
-  Enter current password:
-  Enter new password:
-  New password must be at least 8 characters long.
-  Enter new password:
-  Confirm new password:
-  Passwords do not match. Nothing changed.
   ```
   ```text
-  Commands:
-
-  1. Add User
-  2. Login
-  3. Change Password
-  4. Delete User
- 
-  Enter a command: delete user
-  Enter username to delete: himal
-  User not found. Nothing changed.
-  ```
-  ```text
-  PS D:\Second Year\First Sem\FOCP\Task 3> python main.py
-  File not found.
-  PS D:\Second Year\First Sem\FOCP\Task 3> python main.py
+ PS C:\Users\hp\OneDrive\Desktop\Task 3> & C:/Users/hp/anaconda3/python.exe "c:/Users/hp/OneDrive/Desktop/Task 3/user_management_system.py"
   Welcome to the User Management System!
   -------------------------------------
- 
   Commands:
- 
-  1. Add User
-  2. Login
-  3. Change Password
-  4. Delete User
- 
-  Enter a command:
-  Program terminated by user.
+
+ Enter command (adduser, deluser, passwd, login): deluser
+  Enter username to delete: pawan
+  User not found. Nothing changed.
+  ```
+
   ```
 - **Password File: passwd.txt**
   - **Description**:
     - The `passwd.txt` file contains user details (username, real name, encoded password) for the user management system. The user details are separated by ':' and are used by the scripts to perform user-related operations.
   - **Example Entry**:
-    - `himal:Himal Acharya:uvznynpuneln`
+    - `Pawan: Pawan Adhikari: heyhieeryeggwf`
 
 ### Language and Tools Used:
 - **Programming Language**: Python 3.10.7
 - **IDE/Text Editor**: Visual Studio Code (VSCode)/Windows PowerShell
 
 ### Contact Information
-- **Email**: ahimal22@tbc.edu.np
-- **GitHub**: [himal122](https://github.com/himal122/Himal-Acharya-L4-FoCP-portfolio)
+- **Email**: apawan23@tbc.edu.np
+- **GitHub**: [NothingU]()
 
 <p align="center">This README.md file serves as documentation for my programming portfolio.</p>
